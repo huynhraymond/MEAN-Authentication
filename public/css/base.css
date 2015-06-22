@@ -1,0 +1,149 @@
+body {
+    font: 300 1em 'Helvetica Neue', 'Segoe UI', 'Droid Sans', 'Helvetica';
+    padding: 0;
+    margin: 0;
+}
+
+input, select, textarea, button, .button {
+    font: 200 1em 'Helvetica Neue', 'Segoe UI', 'Droid Sans', 'Helvetica';
+    outline: none;
+    border: 1px solid #eee;
+    padding: 0.35em 0.5em;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0.35em 0.5em;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*********** Top Nav *****************************/
+section.top-nav {
+    width: 100vw;
+    background-color: #aeb0b1;
+    color: #1b198a;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+}
+
+div.top-nav-info {
+    font-size: 1.5em;
+    line-height: 2.5em;
+    width: 85%;
+    padding-left: 1em;
+    float: left;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: .5em;
+    cursor: pointer;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/************** Login & Register *********************/
+
+/*
+.ui-view-authentication.ng-enter {
+    transition: all 1s ease;
+    -webkit-transition:all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+
+    width: 10%;
+    top: 0%;
+    left: 100%;
+
+    opacity: 0.5 ;
+}
+
+.ui-view-authentication.ng-enter.ng-enter-active {
+    width: 30%;
+    top: 25%;
+    left: 35%;
+
+    opacity: 1.0;
+}
+*/
+
+section.page-info {
+    left: 25%;
+    top: 10%;
+    font-size: 1.2em;
+    margin: 0.5em;
+    font-weight: bolder;
+    color: #427070;
+    position: absolute;
+}
+/*
+section.registration,
+section.authentication */
+
+div.ui-view-authentication {
+    width: 40%;
+    top: 15%;
+    left: 25%;
+    position: absolute;
+}
+
+input.input-data {
+    width: 65%;
+    line-height: 2em;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.5em;
+    padding-left: 1em;
+    border: 1px solid #444444;
+    color: #427070;
+
+}
+
+button.cancel,
+button.action {
+    line-height: 2em;
+    width: 25%;
+    color: #3073ad;
+    background-color: #b6b6b6;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1em;
+
+    margin-top: 1em;
+}
+
+button.action {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+div.validate > button.validate:hover,
+button.action:hover,
+button.cancel:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+div.validate > * {
+    float: left;
+}
+
+div.validate > button.validate {
+    width: 20%;
+    line-height: 2em;
+    color: #3073ad;
+    background-color: #b6b6b6;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 1em;
+}
+

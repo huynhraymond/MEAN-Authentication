@@ -1,0 +1,14 @@
+
+<section class="registration clearfix">
+    <div class="validate clearfix">
+        <input class="input-data validate" name="tel" placeholder="phone number (408)000-9999?" ng-model="registeredUser.tel"/>
+        <button class="validate" ng-click="validate()">Validate</button>
+    </div>
+    <input class="input-data validate" name="email" placeholder="your email?" ng-model="registeredUser.email"/>
+    <input class="input-data" name="id" placeholder="validation id?" ng-model="registeredUser.id"/>
+    <input class="input-data" name="username" placeholder="select username?" ng-model="registeredUser.username"/>
+    <input class="input-data" name="password" type="password" placeholder="new password?" ng-model="registeredUser.password"/>
+    <input class="input-data" name="password_confirm" type="password" placeholder="confirm new password?" ng-model="registeredUser.password_confirm"/>
+    <button class="action" ng-click="register()">Register</button>
+    <button class="cancel" ng-click="cancel()">Cancel</button>
+</section>
